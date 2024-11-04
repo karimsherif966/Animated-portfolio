@@ -1,0 +1,168 @@
+@import "../../app.scss";
+
+.hero{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg, #0c0c1d , #111132);
+    position: relative;
+    overflow: hidden;
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        }   
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        align-items: center;      
+        }   
+
+    .imgContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include mobile{
+            height: 48%;
+            position:unset;
+            width: 50%;
+           }   
+        @include tablet{
+            height: 60%;
+            position:unset;
+            width: 50%;
+           }   
+
+        
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper{
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       top: 30%;
+       @include mobile{
+        position: unset;
+        align-items: start;
+        width: 100%;
+      
+       }
+       @include tablet{
+        position: unset;
+        align-items: start;
+        width: 100%;
+      
+       }
+    }
+
+    .textContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        width: 50%;
+        @include mobile{
+            height: 100%;
+            width: 100%;
+            
+           }   
+        @include tablet{
+            height: 100%;
+            width: 100%;
+            
+           }   
+    }
+    .icon{
+        margin-top: 2%;
+        margin-left:-47%;
+        img{
+            width: 40px;
+        }
+        @include mobile{
+            margin-left: 0;
+        }
+        @include tablet{
+            margin-left: 0;
+        }
+        
+    }
+    h2{
+        font-size: 30px;
+        color: rebeccapurple;
+        letter-spacing: 10px;
+
+        @include mobile{
+            font-size: 1.5rem;
+           }   
+        @include tablet{
+            font-size: 1.5rem;
+           }   
+
+    }
+    h1{
+        font-size: 60px;
+        @include mobile{
+            font-size: 2rem;
+           }   
+        @include tablet{
+            font-size: 2rem;
+           }   
+    }
+   
+    button{
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        font-weight: 300;
+        margin-top: 100px;
+        font-weight: bold;
+
+        @include mobile{
+            padding: 5px;
+            margin-top: 15%;
+            
+        }
+        @include tablet{
+            padding: 5px;
+            margin-top: 15%;
+            
+        }
+    }
+    .buttons{
+        display: flex;
+        gap: 30px;
+        margin-left:-17%;
+        .btn2{
+            color: transparent;
+            background-color: white;
+            color: rebeccapurple;
+            
+        }
+        @include mobile{
+            margin-left: 0;
+        }
+        @include tablet{
+            margin-left: 0;
+        }
+        
+    }
+    .slidingTextContainer{
+        position: absolute;
+        font-size: 40vh;
+        white-space: nowrap;
+        top: 50%;
+        color:#ffffff09 ;
+
+    }
+   
+    
+
+}

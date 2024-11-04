@@ -1,0 +1,112 @@
+@import "../../app.scss";
+.portofolio{
+position: relative;
+     .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4rem;
+        .wrapper{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            @include mobile{
+                display: flex;
+                flex-direction: column;
+                height: 80%;
+            }
+            @include tablet{
+                display: flex;
+                flex-direction: column;
+                height: 85%;
+                margin-top: 15%;
+            }
+
+            .imageContainer{
+                flex:1;
+                height: 50%;
+               
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit:contain;
+                }
+            }
+    
+            .textContainer{
+                flex:1;
+                margin-left: 1rem;
+                @include mobile{
+                    width: 85%;
+                }
+                @include tablet{
+                    width: 8    5%;
+                }
+                
+                
+                p{
+                    color: gray;
+                    padding-top: 1rem;
+                    @include mobile{
+                        font-size: 0.9rem;
+                    }
+                    @include tablet{
+                        font-size: large;
+                    }
+                }
+                h1{
+                    font-size:3rem;
+                    @include mobile {
+                        font-size: 1.5rem;
+                    }
+                    @include tablet {
+                        font-size: 2rem;
+                    }
+                }
+
+
+                button{
+                    background-color: orange;
+                    width: 40%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    border: none;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    cursor: pointer;
+                   
+                }
+            }
+
+           
+        }
+
+      
+     }
+    
+
+
+    .progress{
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: orange;
+        font-size: 36px;
+        
+      
+
+        .progressBar{
+        height: 10px;
+        background-color: white;
+        }
+        h1{
+            @include mobile {
+                font-size: 2rem;
+            }
+        }
+    }
+}
