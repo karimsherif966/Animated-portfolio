@@ -60,7 +60,7 @@ export const Hero = () => {
           </motion.button>
         </motion.div>
         <motion.div className="icon" variants={textVariants}>
-          <motion.img src="/assets/scroll.png" animate={scrollBtn} />
+          <motion.img src="./assets/scroll.png" animate={scrollBtn} />
         </motion.div>
       </motion.div>
       <motion.div
@@ -72,7 +72,7 @@ export const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imgContainer">
-        <img src="/assets/hero.png" />
+        <img src="./assets/hero.png" />
       </div>
     </div>
   );

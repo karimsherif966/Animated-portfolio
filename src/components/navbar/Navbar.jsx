@@ -16,18 +16,16 @@ export const Navbar = () => {
           Lama Dev
         </motion.span>
         <div className="social">
-          <a href="">
-            <img src="/assets/facebook.png" alt="" />
-          </a>
-          <a href="">
-            <img src="/assets/instagram.png" alt="" />
-          </a>
-          <a href="">
-            <img src="/assets/youtube.png" alt="" />
-          </a>
-          <a href="">
-            <img src="/assets/dribbble.png" alt="" />
-          </a>
+          <motion.a href="http://www.facebook.com" target="blank" whileHover={{scale:1.5}} transition={{duration:0.5}}>
+            <img src="./assets/facebook.png" alt="" />
+          </motion.a>
+          <motion.a href="http://www.instagram.com" target="blank" whileHover={{scale:1.5}} transition={{duration:0.5}}>
+            <img src="./assets/instagram.png" alt="" />
+          </motion.a>
+          <motion.a href="http://www.youtube.com" target="blank" whileHover={{scale:1.5}} transition={{duration:0.5}}>
+            <img src="./assets/youtube.png" alt="" />
+          </motion.a>
+         
         </div>
       </div>
     </div>

@@ -96,10 +96,10 @@ export const Contact = () => {
             duration: 1,
           }}
         >
-          <input type="text" required placeholder="Name" />
-          <input type="email" required placeholder="Email" />
-          <textarea rows={8} placeholder="Message"></textarea>
-          <button>Submit</button>
+          <motion.input whileFocus={{borderColor:'blue'}} type="text" required placeholder="Name" />
+          <motion.input whileFocus={{borderColor:'blue'}} type="email" required placeholder="Email" />
+          <motion.textarea whileFocus={{borderColor:'blue'}} rows={8} placeholder="Message"></motion.textarea>
+          <motion.button whileHover={{filter:'brightness(1.5)'}} transition={{duration:0.4}}>Submit</motion.button>
         </motion.form>
       </motion.div>
     </motion.div>

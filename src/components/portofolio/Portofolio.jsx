@@ -45,7 +45,7 @@ const Single = ({ item }) => {
           <div className="textContainer">
             <h1>{item.title}</h1>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+          <motion.button whileHover={{scale:1.1 , fontWeight:800 }} transition={{duration:0.3}}>See Demo</motion.button>
           </div>
         </motion.div>
       </div>

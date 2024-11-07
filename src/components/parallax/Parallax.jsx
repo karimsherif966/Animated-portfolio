@@ -53,17 +53,17 @@ export const Parallax = ({ type }) => {
           </>
         )}
       </motion.h1>
-      <motion.div className="mountains" style={{ y: ybg }}></motion.div>
+      <motion.div className="mountains" style={{ y: ybg , backgroundImage:`url("./assets/mountains.png")` }}></motion.div>
       <motion.div
         className="planets"
         style={{
           y: ybg,
           backgroundImage: `url(${
-            type === "services" ? "/assets/planets.png" : "/assets/sun.png"
+            type === "services" ? "./assets/planets.png" : "./assets/sun.png"
           })`,
         }}
       ></motion.div>
-      <motion.div className="stars" style={{ x: ybg }}></motion.div>
+      <motion.div className="stars" style={{ x: ybg , backgroundImage:`url("./assets/stars.png")` }}></motion.div>
     </div>
   );
 };
